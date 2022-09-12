@@ -3,13 +3,11 @@ package reproductor;
 public class Cancion {
 	
 	private String titulo;
-	private Integer duracionMinutos;
-	private Integer duracionSegundos;
+	private Integer duracion;
 
-	public Cancion(String titulo, Integer duracionMinutos, Integer duracionSegundos) {
+	public Cancion(String titulo, Integer duracion) {
 		this.setTitulo(titulo);
-		this.setDuracionMinutos(duracionMinutos);
-		this.setDuracionSegundos(duracionSegundos);
+		this.setDuracion(duracion);
 	}
 
 	public String getTitulo() {
@@ -20,20 +18,12 @@ public class Cancion {
 		this.titulo = titulo;
 	}
 
-	public Integer getDuracionMinutos() {
-		return duracionMinutos;
+	public Integer getDuracion() {
+		return duracion;
 	}
 
-	public void setDuracionMinutos(Integer duracionMinutos) {
-		this.duracionMinutos = duracionMinutos;
-	}
-
-	public Integer getDuracionSegundos() {
-		return duracionSegundos;
-	}
-
-	public void setDuracionSegundos(Integer duracionSegundos) {
-		this.duracionSegundos = duracionSegundos;
+	public void setDuracion(Integer duracion) {
+		this.duracion = duracion;
 	}
 
 }
